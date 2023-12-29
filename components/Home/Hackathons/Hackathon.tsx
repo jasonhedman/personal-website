@@ -55,7 +55,12 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                 >
                     Description
                 </Text>
-                <Text>
+                <Text
+                    fontSize={{
+                        base: 'sm',
+                        md: 'md'
+                    }}
+                >
                     {hackathon.description}
                 </Text>
             </VStack>
@@ -73,7 +78,12 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                 >
                     What I Built
                 </Text>
-                <Text>
+                <Text
+                    fontSize={{
+                        base: 'sm',
+                        md: 'md'
+                    }}
+                >
                     {hackathon.whatIBuilt}
                 </Text>
             </VStack>
