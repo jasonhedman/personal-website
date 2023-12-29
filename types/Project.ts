@@ -11,7 +11,7 @@ export interface ProjectPreview {
 
 export interface Project extends ProjectPreview {
     extendedDescription: string;
-    githubUrl: string;
-    demoUrl: string;
+    githubUrl?: string;
+    demoUrl?: string;
     images: CarouselImage[];
 }

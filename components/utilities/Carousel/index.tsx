@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 
-import {Box, BoxProps, Flex, HStack, Image, Text, VStack} from "@chakra-ui/react";
+import {Box, BoxProps, Flex, HStack, Image, ResponsiveValue, Text, VStack} from "@chakra-ui/react";
 
 import {CarouselImage} from "@/types/CarouselImage";
 
 interface Props extends BoxProps {
     images: CarouselImage[];
+    imageHeight: string | number | ResponsiveValue<string | number>;
 }
 
-const Carousel: React.FC<Props> = ({ images, ...props }) => {
+const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -22,9 +23,9 @@ const Carousel: React.FC<Props> = ({ images, ...props }) => {
             <Image
                 src={images[selectedIndex].src}
                 alt={images[selectedIndex].caption}
-                flex={1}
-                w={'100%'}
-                objectFit={'cover'}
+                h={imageHeight}
+                maxW={'100%'}
+                objectFit={'contain'}
                 rounded={'md'}
                 transition={'all 0.2s ease-in-out'}
             />

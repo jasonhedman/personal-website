@@ -62,7 +62,7 @@ const ProjectModal: React.FC<Props> = ({ isOpen, onClose, selectedProject }) => 
                         {
                             selectedProject.images.length > 0 && (
                                 <Carousel
-                                    h={300}
+                                    imageHeight={300}
                                     w={'100%'}
                                     images={selectedProject.images}
                                 />
@@ -93,27 +93,35 @@ const ProjectModal: React.FC<Props> = ({ isOpen, onClose, selectedProject }) => 
                     </VStack>
                 </ModalBody>
                 <ModalFooter>
-                    <Link
-                        href={selectedProject.githubUrl}
-                        target={'_blank'}
-                    >
-                        <Button
-                            variant={'outline'}
-                        >
-                            Source Code
-                        </Button>
-                    </Link>
-                    <Link
-                        href={selectedProject.demoUrl}
-                        target={'_blank'}
-                    >
-                        <Button
-                            colorScheme={'blue'}
-                            ml={2}
-                        >
-                            Live Demo
-                        </Button>
-                    </Link>
+                    {
+                        selectedProject.githubUrl && (
+                            <Link
+                                href={selectedProject.githubUrl}
+                                target={'_blank'}
+                            >
+                                <Button
+                                    variant={'outline'}
+                                >
+                                    Source Code
+                                </Button>
+                            </Link>
+                        )
+                    }
+                    {
+                        selectedProject.demoUrl && (
+                            <Link
+                                href={selectedProject.demoUrl}
+                                target={'_blank'}
+                            >
+                                <Button
+                                    colorScheme={'blue'}
+                                    ml={2}
+                                >
+                                    Live Demo
+                                </Button>
+                            </Link>
+                        )
+                    }
                 </ModalFooter>
             </ModalContent>
         </Modal>
