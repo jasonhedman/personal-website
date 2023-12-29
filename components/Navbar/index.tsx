@@ -5,7 +5,8 @@ import {Flex, HStack, Image} from "@chakra-ui/react";
 import DesktopNav from "@/components/Navbar/DesktopNav";
 import MobileNav from "@/components/Navbar/MobileNav";
 
-export const NAVBAR_HEIGHT = 48;
+export const NAVBAR_HEIGHT = 72;
+export const MOBILE_OFFSET = 16;
 
 const Navbar = () => {
     return (
@@ -22,7 +23,10 @@ const Navbar = () => {
             zIndex={200}
             maxW={"100%"}
             gap={8}
-            h={`${NAVBAR_HEIGHT}px`}
+            h={{
+                base: `${NAVBAR_HEIGHT - MOBILE_OFFSET}px`,
+                md: `${NAVBAR_HEIGHT}px`
+            }}
         >
             <Image
                 src={"/logo.png"}
