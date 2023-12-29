@@ -62,7 +62,12 @@ const ProjectCard: React.FC<Props> = ({ projectPreview, onClick }) => {
                         rounded={'md'}
                     />
                 </HStack>
-                <Text>
+                <Text
+                    fontSize={{
+                        base: 'sm',
+                        md: 'md'
+                    }}
+                >
                     {projectPreview.description}
                 </Text>
                 <HStack
