@@ -22,6 +22,10 @@ const EducationItem: React.FC<Props> = ({ education }) => {
             <Text
                 fontWeight={'semibold'}
                 color={'blackAlpha.700'}
+                fontSize={{
+                    base: 'xs',
+                    md: 'sm'
+                }}
             >
                 {education.degree}
             </Text>
