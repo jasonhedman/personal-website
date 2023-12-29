@@ -24,7 +24,7 @@ const hackathons: Hackathon[] = [
         description: "Vanderbilt's annual hackathon where students compete for 36 hours to build the most innovative software applications.",
         whatIBuilt: "A web-based AI edtech application that allows students to create personalized study guides and practice tests using their own notes and course materials. Partnered with Vanderbilt's Peabody School of Education for further development.",
         date: "October 2023",
-        location: "Nashville, TN",
+        location: "Nashville, Tennessee",
         project: "ChatEDU",
         award: "1st Place"
     },
