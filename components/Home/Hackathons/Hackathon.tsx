@@ -41,10 +41,42 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                     {hackathon.date}
                 </Text>
             </HStack>
-
-            <Text>
-                {hackathon.description}
-            </Text>
+            <VStack
+                spacing={0}
+                alignItems={'flex-start'}
+            >
+                <Text
+                    fontSize={{
+                        base: 'xs',
+                        md: 'sm'
+                    }}
+                    fontWeight={'semibold'}
+                    color={'blackAlpha.600'}
+                >
+                    Description
+                </Text>
+                <Text>
+                    {hackathon.description}
+                </Text>
+            </VStack>
+            <VStack
+                spacing={0}
+                alignItems={'flex-start'}
+            >
+                <Text
+                    fontSize={{
+                        base: 'xs',
+                        md: 'sm'
+                    }}
+                    fontWeight={'semibold'}
+                    color={'blackAlpha.600'}
+                >
+                    What I Built
+                </Text>
+                <Text>
+                    {hackathon.whatIBuilt}
+                </Text>
+            </VStack>
         </VStack>
     );
 };

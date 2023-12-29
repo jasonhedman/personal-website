@@ -6,7 +6,7 @@ const projects: Project[] = [
     {
         name: 'ChatEDU',
         description: 'Virtual tutor that transforms traditional study materials into interactive learning sessions',
-        extendedDescription: 'ChatEDU is a virtual tutor that transforms traditional study materials into interactive learning sessions. It uses AI to analyze the content of a textbook and generate questions and answers for each section. Students can then use the ChatEDU app to chat with the virtual tutor and learn the material in a fun and engaging way. ChatEDU is built with React, Chakra UI, Next.js, Node.js, TypeScript, and Azure Cognitive Services.',
+        extendedDescription: 'ChatEDU is a dynamic virtual tutor that transforms traditional study materials into interactive learning sessions. Users can upload their notes, textbooks, and lecture slides and the platform automatically generates study guides, explanations, and practice exams (multiple choice, free response, and application questions).',
         skills: [Skills.AppliedAI, Skills.Azure, Skills.FullStackWebDev, Skills.React, Skills.ChakraUI, Skills.DatabaseManagement, Skills.SQL, Skills.NextJS, Skills.Node, Skills.TypeScript, Skills.UIUX],
         image: 'https://www.chatedu.tech/logo.png',
         githubUrl: '',
