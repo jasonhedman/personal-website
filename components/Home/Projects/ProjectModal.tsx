@@ -15,8 +15,9 @@ import {
     Text, VStack
 } from "@chakra-ui/react";
 
-import {Project} from "@/types/Project";
 import Carousel from "@/components/utilities/Carousel";
+
+import {Project} from "@/types/Project";
 
 interface Props {
     isOpen: boolean;
@@ -89,7 +90,43 @@ const ProjectModal: React.FC<Props> = ({ isOpen, onClose, selectedProject }) => 
                         <Text
                             fontWeight={'semibold'}
                         >
-                            Technologies and Skills
+                            Programming Languages
+                        </Text>
+                        <HStack
+                            flexWrap={'wrap'}
+                        >
+                            {
+                                selectedProject.languages.map((skill, index) => (
+                                    <Badge
+                                        key={index}
+                                    >
+                                        {skill}
+                                    </Badge>
+                                ))
+                            }
+                        </HStack>
+                        <Text
+                            fontWeight={'semibold'}
+                        >
+                            Libraries and Frameworks
+                        </Text>
+                        <HStack
+                            flexWrap={'wrap'}
+                        >
+                            {
+                                selectedProject.libraries.map((skill, index) => (
+                                    <Badge
+                                        key={index}
+                                    >
+                                        {skill}
+                                    </Badge>
+                                ))
+                            }
+                        </HStack>
+                        <Text
+                            fontWeight={'semibold'}
+                        >
+                            Skills
                         </Text>
                         <HStack
                             flexWrap={'wrap'}

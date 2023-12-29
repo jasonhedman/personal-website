@@ -2,13 +2,13 @@ import React from 'react';
 
 import {Badge, ListItem, Tooltip, UnorderedList} from "@chakra-ui/react";
 
-import {RankedSkill} from "@/types/RankedSkill";
+import {TagProjects} from "@/types/TagProjects";
 
 interface Props {
-    rankedSkill: RankedSkill
+    tag: TagProjects
 }
 
-const SkillBadge: React.FC<Props> = ({ rankedSkill }) => {
+const TagBadge: React.FC<Props> = ({ tag }) => {
     return (
         <Tooltip
             label={
@@ -16,7 +16,7 @@ const SkillBadge: React.FC<Props> = ({ rankedSkill }) => {
                     alignItems={'flex-start'}
                 >
                     {
-                        rankedSkill.projects.map((project, index) => (
+                        tag.projects.map((project, index) => (
                             <ListItem
                                 key={index}
                                 color={'white'}
@@ -32,10 +32,10 @@ const SkillBadge: React.FC<Props> = ({ rankedSkill }) => {
                 fontSize={16}
                 variant={'outline'}
             >
-                {rankedSkill.skill}
+                {tag.tag}
             </Badge>
         </Tooltip>
     );
 };
 
-export default SkillBadge;
+export default TagBadge;

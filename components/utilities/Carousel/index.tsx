@@ -13,6 +13,14 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
 
+    const onNext = () => {
+        setSelectedIndex((prevState) => prevState + 1);
+    }
+
+    const onPrev = () => {
+        setSelectedIndex((prevState) => prevState + 1);
+    }
+
     return (
         <Flex
             flex={1}

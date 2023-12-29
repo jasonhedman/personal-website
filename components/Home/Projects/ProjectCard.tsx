@@ -77,11 +77,11 @@ const ProjectCard: React.FC<Props> = ({ projectPreview, onClick }) => {
                     mt={'auto'}
                 >
                     {
-                        projectPreview.skills.slice(0, 2).map((skill, index) => (
+                        projectPreview.showcase.map((item, index) => (
                             <Badge
                                 key={index}
                             >
-                                {skill}
+                                {item}
                             </Badge>
                         ))
                     }

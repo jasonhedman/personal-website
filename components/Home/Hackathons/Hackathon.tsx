@@ -1,8 +1,10 @@
 import React from 'react';
 
-import {Hackathon as HackathonType} from "@/types/Hackathon";
-import {Heading, HStack, Text, VStack} from "@chakra-ui/react";
+import {Heading, Stack, Text, VStack} from "@chakra-ui/react";
+
 import Location from "@/components/utilities/Location";
+
+import {Hackathon as HackathonType} from "@/types/Hackathon";
 
 interface Props {
     hackathon: HackathonType
@@ -18,10 +20,14 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                 md: 4
             }}
         >
-            <HStack
+            <Stack
                 w={'100%'}
                 justifyContent={'space-between'}
                 alignItems={'flex-start'}
+                direction={{
+                    base: 'column',
+                    md: 'row'
+                }}
             >
                 <VStack
                     alignItems={'flex-start'}
@@ -40,7 +46,7 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                 >
                     {hackathon.date}
                 </Text>
-            </HStack>
+            </Stack>
             <VStack
                 spacing={0}
                 alignItems={'flex-start'}

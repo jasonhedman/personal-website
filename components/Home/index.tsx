@@ -4,7 +4,7 @@ import {Container} from "@chakra-ui/react";
 
 import Header from "@/components/Home/Header";
 import Projects from "@/components/Home/Projects";
-import Skills from "@/components/Home/Skills";
+import Toolkit from "@/components/Home/Toolkit";
 import Education from "@/components/Home/Education";
 import Hackathons from "@/components/Home/Hackathons";
 
@@ -23,7 +23,7 @@ const Home = () => {
             <Education />
             <Projects />
             <Hackathons />
-            <Skills />
+            <Toolkit />
         </Container>
     );
 };

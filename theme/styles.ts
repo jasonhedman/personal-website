@@ -2,7 +2,6 @@ const styles = {
     global: {
         html: {
             scrollBehavior: "smooth",
-            backgroundColor: "black",
         }
     }
 }

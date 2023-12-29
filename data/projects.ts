@@ -1,14 +1,16 @@
 import {Skills} from "@/data/skills";
 
 import {Project} from "@/types/Project";
+import {Languages} from "@/data/languages";
+import {Libraries} from "@/data/libraries";
 
 const projects: Project[] = [
     {
         name: 'ChatEDU',
         description: 'Virtual tutor that transforms traditional study materials into interactive learning sessions',
+        showcase: [Skills.AppliedAI, Skills.FullStackWebDev],
         extendedDescription: 'ChatEDU is a dynamic virtual tutor that transforms traditional study materials into interactive learning sessions. Users can upload their notes, textbooks, and lecture slides and the platform automatically generates study guides, explanations, and practice exams (multiple choice, free response, and application questions).',
-        skills: [Skills.AppliedAI, Skills.Azure, Skills.FullStackWebDev, Skills.React, Skills.ChakraUI, Skills.DatabaseManagement, Skills.SQL, Skills.NextJS, Skills.Node, Skills.TypeScript, Skills.UIUX],
-        image: 'https://www.chatedu.tech/logo.png',
+        image: '/logos/chatEdu.png',
         githubUrl: 'https://github.com/chat-edu/chat-edu',
         demoUrl: 'https://www.chatedu.tech/',
         images: [
@@ -37,14 +39,17 @@ const projects: Project[] = [
                 caption: 'Technical Architecture'
             }
         ],
+        languages: [Languages.TypeScript, Languages.CSharp, Languages.Python, Languages.SQL],
+        libraries: [Libraries.React, Libraries.NextJS, Libraries.GPT, Libraries.AzureCosmos, Libraries.AzureAiSearch, Libraries.AzureActiveDirectory, Libraries.AzureDocumentIntelligence, Libraries.AzureStaticWebApps, Libraries.Langchain],
+        skills: [Skills.AppliedAI, Skills.Azure, Skills.FullStackWebDev, Skills.DatabaseManagement, Skills.UIUX, Skills.ProductManagement],
         startDate: 'Oct 2023',
-        endDate: 'Present'
+        endDate: 'Present',
     },
     {
         name: 'BRAWL3R',
         description: 'Online multiplayer 2D platform fighter game composable, interoperable in-game NFTs',
-        skills: [Skills.Unity, Skills.SmartContractDev, Skills.Move, Skills.GameDev, Skills.Photon, Skills.CSharp, Skills.Blockchain, Skills.GraphicDesign, Skills.UIUX],
-        image: 'https://www.brawl3r.com/favicon.png',
+        showcase: [Skills.GameDev, Skills.SmartContractDev],
+        image: '/logos/brawl3r.png',
         extendedDescription: 'BRAWL3R is an online multiplayer fighter game with interoperable in-game NFTs. Players can battle each other in real-time and earn NFTs that can be used in other games. BRAWL3R is built with Unity, C#, Photon, and Move.',
         githubUrl: 'https://github.com/aptos-arcade',
         demoUrl: 'https://www.brawl3r.com/',
@@ -66,14 +71,17 @@ const projects: Project[] = [
                 caption: 'Leaderboard'
             }
         ],
+        skills: [Skills.GameDev, Skills.SmartContractDev, Skills.Blockchain, Skills.GraphicDesign, Skills.UIUX, Skills.dAppDev],
+        languages: [Languages.Move, Languages.CSharp, Languages.TypeScript, Languages.SQL],
+        libraries: [Libraries.Unity, Libraries.PhotonFusion, Libraries.PhotonPun2, Libraries.AptosMove, Libraries.WebGL, Libraries.VercelPostgreSQL, Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
         startDate: 'Mar 2023',
         endDate: 'Present'
     },
     {
         name: 'Satay Finance',
         description: 'DeFi aggregator offering composable yield strategies and auto-compounding vaults on Aptos',
-        skills: [Skills.FinancialEngineering, Skills.SmartContractDev, Skills.Move],
-        image: 'https://www.satay.finance/logo.png',
+        showcase: [Skills.FinancialEngineering, Skills.SmartContractDev],
+        image: '/logos/satay.png',
         extendedDescription: 'Satay Finance is DeFi aggregator on Aptos that offers composable yield-generating strategies and auto-compounding vaults. Users can stake their assets in a range of structured products, each with their own risk and reward profile.',
         githubUrl: 'https://github.com/satay-protocol',
         demoUrl: 'https://www.satay.finance/',
@@ -99,14 +107,17 @@ const projects: Project[] = [
                 caption: 'Layer Zero Bridge'
             }
         ],
+        skills: [Skills.FinancialEngineering, Skills.SmartContractDev, Skills.Blockchain, Skills.ProductManagement, Skills.Calculus, Skills.Statistics, Skills.dAppDev],
+        libraries: [Libraries.AptosMove, Libraries.NextJS, Libraries.React, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
+        languages: [Languages.Move, Languages.TypeScript, Languages.Python],
         startDate: 'Aug 2022',
-        endDate: 'Present'
+        endDate: 'Present',
     },
     {
         name: 'Decentralese',
         description: 'Zero-collateral NFT renting and leasing for game assets on Polygon using ERC-4907',
-        skills: [Skills.SmartContractDev, Skills.Solidity],
-        image: 'https://www.decentra.lease/favicon.ico',
+        showcase: [Skills.SmartContractDev, Skills.dAppDev],
+        image: '/logos/decentralease.png',
         extendedDescription: 'Decentralese is a zero-collateral NFT renting and leasing market on Polygon that utilizes the novel ERC-4907 standard. The platform aims to unlock liquidity and lower barriers to entry for gaming assets.',
         githubUrl: 'https://github.com/decentralease',
         demoUrl: 'https://www.decentra.lease/',
@@ -128,14 +139,17 @@ const projects: Project[] = [
                 caption: 'Grand Vision'
             }
         ],
+        skills: [Skills.SmartContractDev, Skills.dAppDev, Skills.Blockchain, Skills.ProductManagement, Skills.UIUX],
+        languages: [Languages.TypeScript, Languages.Solidity],
+        libraries: [Libraries.React, Libraries.NextJS, Libraries.Thirdweb, Libraries.CoinbaseWallet, Libraries.Polygon],
         startDate: 'Jul 2022',
         endDate: 'Aug 2022'
     },
     {
         name: 'Smarter Barter',
         description: 'Financial literacy and community service program for students in New York City.',
-        skills: [Skills.ReactNative, Skills.Firebase, Skills.GoogleCloud, Skills.ProductManagement],
-        image: 'https://creditdo-admin.vercel.app/_next/image?url=%2Flogo.png&w=256&q=75',
+        showcase: [Skills.MobileDev, Skills.FullStackWebDev],
+        image: '/logos/creditDo.png',
         extendedDescription: 'Credit Do is a non-profit that aims to empower underpriviledged students in New York City with its Smarter Barter program. The program is broken into three parts: learn, work, and earn. Students first complete a financial literacy course through their math class, then work a local community service event, and finally earn a college savings deposit and meal stipend. \n \n \n I developed the Smarter Barter student mobile app and teacher admin dashboard.',
         githubUrl: 'https://github.com/credit-do',
         demoUrl: 'https://creditdo-admin.vercel.app/',
@@ -157,14 +171,17 @@ const projects: Project[] = [
                 caption: 'Student Goal Setting'
             }
         ],
+        skills: [Skills.MobileDev, Skills.FullStackWebDev, Skills.GoogleCloud, Skills.ProductManagement, Skills.iOSDev, Skills.AndroidDev, Skills.GoogleCloud],
+        languages: [Languages.TypeScript, Languages.SQL],
+        libraries: [Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.Firebase, Libraries.GoogleCloudFunctions],
         startDate: 'Sep 2021',
         endDate: 'Apr 2023'
     },
     {
         name: 'Moneyline',
         description: 'Decentralized betting market where users can trade sports teams like stocks',
-        skills: [Skills.SmartContractDev, Skills.Solidity, Skills.dAppDev, Skills.iOSDev, Skills.AndroidDev, Skills.FinancialEngineering, Skills.Firebase, Skills.Blockchain, Skills.Calculus, Skills.GoogleCloud, Skills.ReactNative, Skills.Solidity],
-        image: 'https://media.licdn.com/dms/image/C4E0BAQH6uAdSN9C0EA/company-logo_100_100/0/1630633790771?e=1711584000&v=beta&t=sZUkrVC8T8irHEDAOBQsrDqjTkgGauLATqzYiRGpOBc',
+        showcase: [Skills.SmartContractDev, Skills.FinancialEngineering],
+        image: '/logos/moneyline.png',
         extendedDescription: 'Moneyline is a decentralized betting market where users can trade sports teams like stocks. Each team is tokenized and priced using a proprietary automated market maker. Launched to 500 users during the 2020 March Madness tournament, Moneyline was the first dApp to offer a fully decentralized betting experience.',
         githubUrl: 'https://github.com/fantxchange',
         demoUrl: '',
@@ -186,13 +203,16 @@ const projects: Project[] = [
                 caption: 'Live Game Screen'
             }
         ],
+        skills: [Skills.SmartContractDev, Skills.FinancialEngineering, Skills.MobileDev, Skills.Blockchain, Skills.iOSDev, Skills.AndroidDev, Skills.UIUX, Skills.Statistics, Skills.Calculus, Skills.GoogleCloud, Skills.ProductManagement],
+        languages: [Languages.Solidity, Languages.TypeScript, Languages.SQL],
+        libraries: [Libraries.ReactNative, Libraries.Expo, Libraries.Ethereum, Libraries.MaterialUI],
         startDate: 'Mar 2020',
         endDate: 'Jul 2022'
     },
     {
         name: 'PikApp',
         description: 'Map-based app for finding and coordinating pickup sporting events',
-        skills: [Skills.ReactNative, Skills.GoogleMapsAPI],
+        showcase: [Skills.MobileDev, Skills.GoogleCloud],
         image: 'https://media.licdn.com/dms/image/C4E0BAQG4SYS8gVthhA/company-logo_100_100/0/1630623221285?e=1711584000&v=beta&t=Xcc3Ox-CChPTEh1Nsudd5Q0_nXQQA593wcPIS4RKaV4',
         extendedDescription: 'PikApp is a map-based app for finding and coordinating pickup sporting events. It utilizes Google Places for suggesting locations and geohashing for distance calculations and intelligent event suggestions.',
         githubUrl: '',
@@ -215,30 +235,39 @@ const projects: Project[] = [
                 caption: 'Share Profile'
             }
         ],
+        skills: [Skills.MobileDev, Skills.GoogleCloud, Skills.iOSDev, Skills.AndroidDev, Skills.UIUX, Skills.ProductManagement, Skills.DatabaseManagement],
+        languages: [Languages.TypeScript],
+        libraries: [Libraries.ReactNative, Libraries.Expo, Libraries.Firebase, Libraries.GoogleMapsAPI, Libraries.GooglePlacesAPI, Libraries.MaterialUI],
         startDate: 'Jun 2018',
         endDate: 'Mar 2020'
     },
     {
         name: 'Real Vision Bot Portfolio',
         description: 'Collective investment DAO for Real Vision Pro Crypto NFT holders.',
-        skills: [Skills.SmartContractDev, Skills.FullStackWebDev],
+        showcase: [Skills.FinancialEngineering, Skills.FullStackWebDev],
         image: 'https://yt3.googleusercontent.com/riWTZgtzm4m3UOTG8MMnTal7i7EfV1rWEhzS5Y1m_3ineiBKylbhoYjAacT2ZWP7skSAqpmC=s900-c-k-c0x00ffffff-no-rj',
         extendedDescription: 'Real Vision Bot Portfolio is a collective investment DAO for Real Vision Pro Crypto NFT holders. Each week, users vote on a new portfolio allocation and the smart contract automatically rebalances the portfolio.',
         githubUrl: '',
         demoUrl: '',
         images: [],
+        skills: [Skills.FinancialEngineering, Skills.FullStackWebDev, Skills.dAppDev, Skills.DatabaseManagement, Skills.Blockchain, Skills.UIUX],
+        languages: [Languages.Solidity, Languages.TypeScript],
+        libraries: [Libraries.React, Libraries.Ethereum, Libraries.NextJS, Libraries.CoinbaseWallet, Libraries.ChakraUI],
         startDate: 'Apr 2021',
         endDate: 'Oct 2021'
     },
     {
         name: 'Aptostream',
         description: 'Programmable continuous and event-based payment protocol on Aptos',
-        skills: [Skills.FinancialEngineering, Skills.dAppDev],
-        image: 'https://aptostream.com/logo.png',
+        showcase: [Skills.FinancialEngineering, Skills.dAppDev],
+        image: '/logos/aptostream.png',
         extendedDescription: 'Aptostream is a programmable continuous and event-based payment protocol on Aptos. It allows users to pay salary by the second, trigger payments based on events, and create custom payment schedules.',
         githubUrl: '',
         demoUrl: '',
         images: [],
+        skills: [Skills.FinancialEngineering, Skills.dAppDev, Skills.SmartContractDev, Skills.Blockchain, Skills.FullStackWebDev],
+        languages: [Languages.Move, Languages.TypeScript],
+        libraries: [Libraries.AptosMove, Libraries.React, Libraries.NextJS, Libraries.ChakraUI],
         startDate: 'Apr 2023',
         endDate: 'May 2023'
     },
