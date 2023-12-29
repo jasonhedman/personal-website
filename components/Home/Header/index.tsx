@@ -29,7 +29,12 @@ const Header = () => {
                 <VStack
                     alignItems={'flex-start'}
                 >
-                    <Heading>
+                    <Heading
+                        bgGradient={'linear(to-r, #ac8037, #d2b267)'}
+                        backgroundClip={'text'}
+                        color={'transparent'}
+                        w={'fit-content'}
+                    >
                         {profileHeader.name}
                     </Heading>
                     <Text>

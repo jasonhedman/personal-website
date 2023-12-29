@@ -23,7 +23,7 @@ const ContactLink: React.FC<Props> = ({ contactLink }) => {
                 p={2}
                 _hover={{
                     cursor: 'pointer',
-                    borderColor: 'gray.400',
+                    borderColor: '#e2c273',
                     bg: 'blackAlpha.200'
                 }}
                 transition={'all 0.2s ease-in-out'}

@@ -17,7 +17,9 @@ const ProjectCard: React.FC<Props> = ({ projectPreview, onClick }) => {
             _hover={{
                 shadow: 'md',
                 bg: 'blackAlpha.50',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                borderColor: '#e2c273',
+                transform: 'scale(1.02)'
             }}
             transition={'all 0.2s ease-in-out'}
             onClick={onClick}
