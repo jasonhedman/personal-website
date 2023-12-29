@@ -12,6 +12,7 @@ const Navbar = () => {
         <Flex
             w={"100%"}
             justifyContent={"space-between"}
+            alignItems={"center"}
             p={{
                 base: 2,
                 md: 4
