@@ -10,7 +10,9 @@ import educations from "@/data/educations";
 
 const Education = () => {
     return (
-        <Section>
+        <Section
+            id={'education'}
+        >
             <Subheading
                 text={'Education'}
             />

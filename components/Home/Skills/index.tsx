@@ -20,7 +20,9 @@ const Skills = () => {
 
 
     return (
-        <Section>
+        <Section
+            id={'skills'}
+        >
             <Subheading text={'Skills'} />
             <HStack
                 flexWrap={'wrap'}

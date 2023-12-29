@@ -11,7 +11,9 @@ import profileHeader from "@/data/profileHeader";
 
 const Header = () => {
     return (
-        <Section>
+        <Section
+            id={'about'}
+        >
             <Stack
                 spacing={{
                     base: 4,

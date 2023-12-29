@@ -8,13 +8,15 @@ import Skills from "@/components/Home/Skills";
 import Education from "@/components/Home/Education";
 import Hackathons from "@/components/Home/Hackathons";
 
+import {NAVBAR_HEIGHT} from "@/components/Navbar";
+
 const Home = () => {
     return (
         <Container
             maxW={'6xl'}
             py={{
-                base: 4,
-                md: 8
+                base: `${NAVBAR_HEIGHT + 8}px`,
+                md: `${NAVBAR_HEIGHT + 16}px`
             }}
         >
             <Header />

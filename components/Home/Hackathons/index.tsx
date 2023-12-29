@@ -13,7 +13,9 @@ const Hackathons = () => {
     const [showAll, setShowAll] = useState<boolean>(false);
 
     return (
-        <Section>
+        <Section
+            id={'hackathons'}
+        >
             <Subheading text={'Hackathon Awards'} />
             <VStack
                 spacing={{

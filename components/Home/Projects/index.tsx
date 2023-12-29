@@ -36,7 +36,9 @@ const Projects = () => {
                     />
                 )
             }
-            <Section>
+            <Section
+                id={'projects'}
+            >
                 <Subheading
                     text={'Projects'}
                 />
