@@ -46,17 +46,25 @@ const ProjectModal: React.FC<Props> = ({ isOpen, onClose, selectedProject }) => 
                             boxSize={8}
                             rounded={'md'}
                         />
-                        <Heading
-                            fontSize={'3xl'}
+                        <VStack
+                            alignItems={'flex-start'}
+                            spacing={0}
                         >
-                            {selectedProject.name}
-                        </Heading>
-                        <Text
-                            fontSize={'sm'}
-                            color={'blackAlpha.600'}
-                        >
-                            {selectedProject.startDate}-{selectedProject.endDate}
-                        </Text>
+                            <Heading
+                                fontSize={{
+                                    base: '2xl',
+                                    md: '3xl'
+                                }}
+                            >
+                                {selectedProject.name}
+                            </Heading>
+                            <Text
+                                fontSize={'sm'}
+                                color={'blackAlpha.600'}
+                            >
+                                {selectedProject.startDate}-{selectedProject.endDate}
+                            </Text>
+                        </VStack>
                     </HStack>
                 </ModalHeader>
                 <ModalCloseButton />

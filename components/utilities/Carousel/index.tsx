@@ -18,6 +18,10 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
             flex={1}
             direction={'column'}
             alignItems={'center'}
+            gap={{
+                base: 1,
+                md: 2
+            }}
             {...props}
         >
             <Image
@@ -34,6 +38,7 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
             >
                 <Text
                     color={'black'}
+                    fontSize={'sm'}
                 >
                     {images[selectedIndex].caption}
                 </Text>
