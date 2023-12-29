@@ -77,6 +77,10 @@ const navLinks: NavLinkType[] = [
     {
         href: "hackathons",
         label: "Hackathons"
+    },
+    {
+        href: "skills",
+        label: "Skills"
     }
 ]
 
