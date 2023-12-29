@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Badge, Card, Heading, HStack, Image, Text, VStack} from "@chakra-ui/react";
+import {Badge, Card, Heading, HStack, Image, Stack, Text, VStack} from "@chakra-ui/react";
 
 import {ProjectPreview} from "@/types/Project";
 
@@ -30,16 +30,31 @@ const ProjectCard: React.FC<Props> = ({ projectPreview, onClick }) => {
                     w={'100%'}
                     justifyContent={'space-between'}
                 >
-                    <Heading
-                        as={'h3'}
-                        fontSize={{
-                            base: 'md',
-                            md: 'lg'
-                        }}
-                        fontWeight={'semibold'}
+                    <Stack
+                        direction={'column'}
+                        alignItems={'flex-start'}
+                        spacing={0}
                     >
-                        {projectPreview.name}
-                    </Heading>
+                        <Heading
+                            as={'h3'}
+                            fontSize={{
+                                base: 'md',
+                                md: 'lg'
+                            }}
+                            fontWeight={'semibold'}
+                        >
+                            {projectPreview.name}
+                        </Heading>
+                        <Text
+                            fontSize={{
+                                base: 'xs',
+                                md: 'sm'
+                            }}
+                            color={'blackAlpha.600'}
+                        >
+                            {projectPreview.startDate}-{projectPreview.endDate}
+                        </Text>
+                    </Stack>
                     <Image
                         src={projectPreview.image}
                         alt={projectPreview.name}

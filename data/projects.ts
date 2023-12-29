@@ -36,7 +36,9 @@ const projects: Project[] = [
                 src: '/projects/chatEdu/architecture.png',
                 caption: 'Technical Architecture'
             }
-        ]
+        ],
+        startDate: 'Oct 2023',
+        endDate: 'Present'
     },
     {
         name: 'BRAWL3R',
@@ -63,7 +65,9 @@ const projects: Project[] = [
                 src: '/projects/brawl3r/leaderboard.png',
                 caption: 'Leaderboard'
             }
-        ]
+        ],
+        startDate: 'Mar 2023',
+        endDate: 'Present'
     },
     {
         name: 'Satay Finance',
@@ -94,7 +98,9 @@ const projects: Project[] = [
                 src: '/projects/satay/bridge.png',
                 caption: 'Layer Zero Bridge'
             }
-        ]
+        ],
+        startDate: 'Aug 2022',
+        endDate: 'Present'
     },
     {
         name: 'Decentralese',
@@ -121,7 +127,9 @@ const projects: Project[] = [
                 src: '/projects/decentralease/vision.jpeg',
                 caption: 'Grand Vision'
             }
-        ]
+        ],
+        startDate: 'Jul 2022',
+        endDate: 'Aug 2022'
     },
     {
         name: 'Smarter Barter',
@@ -148,7 +156,9 @@ const projects: Project[] = [
                 src: '/projects/creditDo/studentGoals.png',
                 caption: 'Student Goal Setting'
             }
-        ]
+        ],
+        startDate: 'Sep 2021',
+        endDate: 'Apr 2023'
     },
     {
         name: 'Moneyline',
@@ -175,7 +185,9 @@ const projects: Project[] = [
                 src: '/projects/moneyline/game.PNG',
                 caption: 'Live Game Screen'
             }
-        ]
+        ],
+        startDate: 'Mar 2020',
+        endDate: 'Jul 2022'
     },
     {
         name: 'PikApp',
@@ -202,7 +214,9 @@ const projects: Project[] = [
                 src: '/projects/pikapp/profile.png',
                 caption: 'Share Profile'
             }
-        ]
+        ],
+        startDate: 'Jun 2018',
+        endDate: 'Mar 2020'
     },
     {
         name: 'Real Vision Bot Portfolio',
@@ -212,7 +226,9 @@ const projects: Project[] = [
         extendedDescription: 'Real Vision Bot Portfolio is a collective investment DAO for Real Vision Pro Crypto NFT holders. Each week, users vote on a new portfolio allocation and the smart contract automatically rebalances the portfolio.',
         githubUrl: '',
         demoUrl: '',
-        images: []
+        images: [],
+        startDate: 'Apr 2021',
+        endDate: 'Oct 2021'
     },
     {
         name: 'Aptostream',
@@ -222,7 +238,9 @@ const projects: Project[] = [
         extendedDescription: 'Aptostream is a programmable continuous and event-based payment protocol on Aptos. It allows users to pay salary by the second, trigger payments based on events, and create custom payment schedules.',
         githubUrl: '',
         demoUrl: '',
-        images: []
+        images: [],
+        startDate: 'Apr 2023',
+        endDate: 'May 2023'
     },
 ]
 

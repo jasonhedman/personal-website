@@ -51,6 +51,12 @@ const ProjectModal: React.FC<Props> = ({ isOpen, onClose, selectedProject }) => 
                         >
                             {selectedProject.name}
                         </Heading>
+                        <Text
+                            fontSize={'sm'}
+                            color={'blackAlpha.600'}
+                        >
+                            {selectedProject.startDate}-{selectedProject.endDate}
+                        </Text>
                     </HStack>
                 </ModalHeader>
                 <ModalCloseButton />

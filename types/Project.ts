@@ -7,6 +7,8 @@ export interface ProjectPreview {
     description: string;
     image: string;
     skills: Skills[];
+    startDate: string;
+    endDate: string;
 }
 
 export interface Project extends ProjectPreview {
