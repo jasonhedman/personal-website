@@ -26,7 +26,7 @@ const ExperienceHeading: React.FC<Props> = ({ headingText, startYear, endYear })
                 {headingText}
             </Heading>
             <Text
-                color={'blackAlpha.600'}
+                opacity={0.8}
             >
                 {startYear} - {endYear}
             </Text>

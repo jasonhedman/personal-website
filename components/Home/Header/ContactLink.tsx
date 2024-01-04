@@ -2,7 +2,7 @@ import React from 'react';
 
 import Link from "next/link";
 
-import {Box, Icon} from "@chakra-ui/react";
+import {Box, Icon, useColorModeValue} from "@chakra-ui/react";
 
 import {ContactLink as ContactLinkType} from "@/types/ContactLink";
 
@@ -11,6 +11,9 @@ interface Props {
 }
 
 const ContactLink: React.FC<Props> = ({ contactLink }) => {
+
+    const hoverBgColor = useColorModeValue("blackAlpha.300", "whiteAlpha.300");
+
     return (
         <Link
             href={contactLink.href}
@@ -18,13 +21,13 @@ const ContactLink: React.FC<Props> = ({ contactLink }) => {
         >
             <Box
                 borderWidth={1}
-                borderColor={'gray.200'}
+                borderColor={'gray.300'}
                 rounded={'md'}
                 p={2}
                 _hover={{
                     cursor: 'pointer',
                     borderColor: '#e2c273',
-                    bg: 'blackAlpha.200'
+                    bg: hoverBgColor
                 }}
                 transition={'all 0.2s ease-in-out'}
                 boxSize={10}

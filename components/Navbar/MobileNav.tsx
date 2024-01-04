@@ -27,7 +27,7 @@ const MobileNav = () => {
                     }}
                 />}
                 onClick={onOpen}
-                variant={'ghost'}
+                // variant={'ghost'}
                 display={{
                     base: "block",
                     md: "none"

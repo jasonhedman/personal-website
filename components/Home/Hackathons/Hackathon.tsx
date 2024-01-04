@@ -42,7 +42,7 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                     />
                 </VStack>
                 <Text
-                    color={'blackAlpha.600'}
+                    opacity={0.8}
                 >
                     {hackathon.date}
                 </Text>
@@ -57,7 +57,7 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                         md: 'sm'
                     }}
                     fontWeight={'semibold'}
-                    color={'blackAlpha.600'}
+                    opacity={0.7}
                 >
                     Description
                 </Text>
@@ -80,7 +80,7 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                         md: 'sm'
                     }}
                     fontWeight={'semibold'}
-                    color={'blackAlpha.600'}
+                    opacity={0.7}
                 >
                     What I Built
                 </Text>

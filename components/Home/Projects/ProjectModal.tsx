@@ -61,7 +61,7 @@ const ProjectModal: React.FC<Props> = ({ isOpen, onClose, selectedProject }) => 
                             </Heading>
                             <Text
                                 fontSize={'sm'}
-                                color={'blackAlpha.600'}
+                                opacity={0.7}
                             >
                                 {selectedProject.startDate}-{selectedProject.endDate}
                             </Text>

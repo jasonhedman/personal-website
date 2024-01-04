@@ -4,6 +4,7 @@ import {Flex, HStack, Image} from "@chakra-ui/react";
 
 import DesktopNav from "@/components/Navbar/DesktopNav";
 import MobileNav from "@/components/Navbar/MobileNav";
+import ColorModeToggle from "@/components/Navbar/ColorModeToggle";
 
 export const NAVBAR_HEIGHT = 72;
 export const MOBILE_OFFSET = 16;
@@ -40,6 +41,7 @@ const Navbar = () => {
             <HStack
                 alignItems={"flex-start"}
             >
+                <ColorModeToggle />
                 <MobileNav />
             </HStack>
         </Flex>

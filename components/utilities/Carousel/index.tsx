@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import {Box, BoxProps, Flex, HStack, Image, ResponsiveValue, Text, VStack} from "@chakra-ui/react";
+import {Box, BoxProps, Flex, HStack, Image, ResponsiveValue, Text, useColorModeValue, VStack} from "@chakra-ui/react";
 
 import {CarouselImage} from "@/types/CarouselImage";
 
@@ -20,6 +20,8 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
     const onPrev = () => {
         setSelectedIndex((prevState) => prevState + 1);
     }
+
+    const stepColor = useColorModeValue("black", "white");
 
     return (
         <Flex
@@ -45,7 +47,6 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
                 flexShrink={0}
             >
                 <Text
-                    color={'black'}
                     fontSize={'sm'}
                 >
                     {images[selectedIndex].caption}
@@ -58,7 +59,8 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
                                 w={2}
                                 h={2}
                                 rounded={'full'}
-                                bg={index === selectedIndex ? 'black' : 'blackAlpha.400'}
+                                bg={stepColor}
+                                opacity={index === selectedIndex ? 1 : 0.5}
                                 cursor={'pointer'}
                                 onClick={() => setSelectedIndex(index)}
                                 _hover={{

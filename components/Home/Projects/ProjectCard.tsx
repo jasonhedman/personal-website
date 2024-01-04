@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Badge, Card, Heading, HStack, Image, Stack, Text, VStack} from "@chakra-ui/react";
+import {Badge, Card, Heading, HStack, Image, Stack, Text, useColorModeValue, VStack} from "@chakra-ui/react";
 
 import {ProjectPreview} from "@/types/Project";
 
@@ -10,16 +10,19 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({ projectPreview, onClick }) => {
+
+    const hoverColor = useColorModeValue("blackAlpha.50", "whiteAlpha.300")
+
     return (
         <Card
             variant={'outline'}
             p={4}
             _hover={{
                 shadow: 'md',
-                bg: 'blackAlpha.50',
                 cursor: 'pointer',
                 borderColor: '#e2c273',
-                transform: 'scale(1.02)'
+                transform: 'scale(1.02)',
+                bg: hoverColor
             }}
             transition={'all 0.2s ease-in-out'}
             onClick={onClick}
@@ -52,7 +55,7 @@ const ProjectCard: React.FC<Props> = ({ projectPreview, onClick }) => {
                                 base: 'xs',
                                 md: 'sm'
                             }}
-                            color={'blackAlpha.600'}
+                            opacity={0.7}
                         >
                             {projectPreview.startDate}-{projectPreview.endDate}
                         </Text>

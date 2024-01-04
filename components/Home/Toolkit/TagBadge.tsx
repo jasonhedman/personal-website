@@ -19,7 +19,6 @@ const TagBadge: React.FC<Props> = ({ tag }) => {
                         tag.projects.map((project, index) => (
                             <ListItem
                                 key={index}
-                                color={'white'}
                             >
                                 {project}
                             </ListItem>

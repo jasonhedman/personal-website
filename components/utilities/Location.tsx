@@ -11,8 +11,8 @@ interface Props {
 const Location: React.FC<Props> = ({ location }) => {
     return (
         <HStack
-            color={'blackAlpha.600'}
             spacing={4}
+            opacity={0.7}
         >
             <FaGlobe />
             <Text>

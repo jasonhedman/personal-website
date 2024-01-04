@@ -42,9 +42,6 @@ const NavLink: React.FC<NavLinkProps> = ({ navLink, onClick}) => {
     return (
         <Button
             variant={'ghost'}
-            _hover={{
-                bg: 'blackAlpha.500'
-            }}
             onClick={() => {
                 const ele = document.getElementById(navLink.href);
                 if(!ele) return;
