@@ -18,7 +18,7 @@ const Carousel: React.FC<Props> = ({ images, imageHeight, ...props }) => {
     }
 
     const onPrev = () => {
-        setSelectedIndex((prevState) => prevState + 1);
+        setSelectedIndex((prevState) => prevState - 1);
     }
 
     const stepColor = useColorModeValue("black", "white");

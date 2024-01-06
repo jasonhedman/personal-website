@@ -15,7 +15,7 @@ const Section: React.FC<Props> = ({ children, id }) => {
         >
             <Box
                 as={'section'}
-                p={{
+                py={{
                     base: 4,
                     md: 8
                 }}

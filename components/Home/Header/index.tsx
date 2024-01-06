@@ -17,7 +17,7 @@ const Header = () => {
             <Stack
                 spacing={{
                     base: 4,
-                    md: 100
+                    md: 150
                 }}
                 direction={{
                     base: 'column-reverse',
@@ -25,6 +25,10 @@ const Header = () => {
                 }}
                 w={'100%'}
                 justifyContent={'space-between'}
+                alignItems={{
+                    base: 'flex-start',
+                    md: 'center'
+                }}
             >
                 <VStack
                     alignItems={'flex-start'}
