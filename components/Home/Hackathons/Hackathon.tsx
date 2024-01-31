@@ -35,7 +35,7 @@ const Hackathon: React.FC<Props> = ({ hackathon }) => {
                     <Heading
                         fontSize={'xl'}
                     >
-                        {hackathon.title}  <Text as='span' opacity={0.7} fontSize={'lg'}>{hackathon.award}</Text>
+                        {hackathon.title}  <Text as='span' color={'#ac8037'} fontSize={'lg'}>{hackathon.award}</Text>
                     </Heading>
                     <Location
                         location={hackathon.location}

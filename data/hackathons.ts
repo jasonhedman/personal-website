@@ -2,6 +2,15 @@ import {Hackathon} from "@/types/Hackathon";
 
 const hackathons: Hackathon[] = [
     {
+        title: "Microsoft AI Classroom Hackathon",
+        description: "A Microsoft challenge for students to reimagine the future of education using Azure AI and Azure Databases.",
+        whatIBuilt: "A multi-agent AI education framework that optimizes learning pathways for students and synthesizes classroom insights for teachers. Employed 4 Azure AI Services and 2 Azure Databases.",
+        date: "January 2024",
+        location: "Global",
+        project: "ChatEDU",
+        award: "1st Place"
+    },
+    {
         title: "Aptos Hack Holland",
         description: "Aptos-specific hackathon focused on building innovative applications using Move, a novel smart contract programming language.",
         whatIBuilt: "A Move-based dynamic on-chain game asset model that enables the creation of higher-order NFTs by combining equippable NFTs. Demoed the model using BRAWL3R, where users can enhance their 'player' NFTs with 'sword' and 'gun' assets.",
