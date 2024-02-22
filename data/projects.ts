@@ -47,7 +47,7 @@ const projects: Project[] = [
     },
     {
         name: 'BRAWL3R',
-        description: 'Online multiplayer 2D platform fighter game composable, interoperable in-game NFTs',
+        description: 'Online multiplayer 2D platform fighter game with composable, interoperable in-game NFTs',
         showcase: [Skills.GameDev, Skills.SmartContractDev],
         image: '/logos/brawl3r.png',
         extendedDescription: 'BRAWL3R is an online multiplayer fighter game with interoperable in-game NFTs. Players can battle each other in real-time and earn NFTs that can be used in other games. BRAWL3R is built with Unity, C#, Photon, and Move.',
