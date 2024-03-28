@@ -6,6 +6,38 @@ import {Libraries} from "@/data/libraries";
 
 const projects: Project[] = [
     {
+        name: 'BRAWL3R',
+        description: 'Online multiplayer 2D platform fighter game with composable, interoperable in-game NFTs',
+        showcase: [Skills.GameDev, Skills.SmartContractDev],
+        image: '/logos/brawl3r.png',
+        extendedDescription: 'BRAWL3R is an online multiplayer fighter game with interoperable in-game NFTs. Players can battle each other in real-time and earn NFTs that can be used in other games. BRAWL3R is built with Unity, C#, Photon, and Move.',
+        githubUrl: 'https://github.com/aptos-arcade',
+        demoUrl: 'https://www.brawl3r.com/',
+        images: [
+            {
+                src: '/projects/brawl3r/cover.png',
+                caption: 'Cover'
+            },
+            {
+                src: '/projects/brawl3r/gameplay.png',
+                caption: 'Gameplay'
+            },
+            {
+                src: '/projects/brawl3r/brawler.png',
+                caption: 'Brawler Creation'
+            },
+            {
+                src: '/projects/brawl3r/leaderboard.png',
+                caption: 'Leaderboard'
+            }
+        ],
+        skills: [Skills.GameDev, Skills.SmartContractDev, Skills.Blockchain, Skills.GraphicDesign, Skills.UIUX, Skills.dAppDev],
+        languages: [Languages.Move, Languages.CSharp, Languages.TypeScript, Languages.SQL],
+        libraries: [Libraries.Unity, Libraries.PhotonFusion, Libraries.PhotonPun2, Libraries.AptosMove, Libraries.WebGL, Libraries.VercelPostgreSQL, Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
+        startDate: 'Mar 2023',
+        endDate: 'Present'
+    },
+    {
         name: 'ChatEDU',
         description: 'Virtual tutor that transforms traditional study materials into interactive learning sessions',
         showcase: [Skills.AppliedAI, Skills.FullStackWebDev],
@@ -46,36 +78,48 @@ const projects: Project[] = [
         endDate: 'Present',
     },
     {
-        name: 'BRAWL3R',
-        description: 'Online multiplayer 2D platform fighter game with composable, interoperable in-game NFTs',
-        showcase: [Skills.GameDev, Skills.SmartContractDev],
-        image: '/logos/brawl3r.png',
-        extendedDescription: 'BRAWL3R is an online multiplayer fighter game with interoperable in-game NFTs. Players can battle each other in real-time and earn NFTs that can be used in other games. BRAWL3R is built with Unity, C#, Photon, and Move.',
-        githubUrl: 'https://github.com/aptos-arcade',
-        demoUrl: 'https://www.brawl3r.com/',
+        name: 'Lucky Leopards Club',
+        description: 'The first provably-fair, fully-on-chain, decentralized casino, powered by Aptos Randomness',
+        showcase: [Skills.SmartContractDev, Skills.FinancialEngineering],
+        image: '/logos/luckyLeopards.png',
+        extendedDescription: 'Lucky Leopards Club is the first provably-fair, fully-on-chain casino, powered by Aptos. Users can play a range of games, including blackjack, roulette, mines, dice with the confidence that the outcomes are truly random and fair.',
+        githubUrl: 'https://github.com/jasonhedman/aptosino',
+        demoUrl: 'https://www.luckyleopards.club/',
         images: [
             {
-                src: '/projects/brawl3r/cover.png',
-                caption: 'Cover'
+                src: '/projects/luckyLeopards/architecture.png',
+                caption: 'Technical Architecture'
             },
             {
-                src: '/projects/brawl3r/gameplay.png',
-                caption: 'Gameplay'
+                src: '/projects/luckyLeopards/blackjack.png',
+                caption: 'Blackjack'
             },
             {
-                src: '/projects/brawl3r/brawler.png',
-                caption: 'Brawler Creation'
+                src: '/projects/luckyLeopards/roulette.png',
+                caption: 'Roulette'
             },
             {
-                src: '/projects/brawl3r/leaderboard.png',
-                caption: 'Leaderboard'
+                src: '/projects/luckyLeopards/mines.png',
+                caption: 'Mines'
+            },
+            {
+                src: '/projects/luckyLeopards/dice.png',
+                caption: 'Dice'
+            },
+            {
+                src: '/projects/luckyLeopards/stake.png',
+                caption: 'Decentralized House'
+            },
+            {
+                src: '/projects/luckyLeopards/club.png',
+                caption: 'NFT Club'
             }
         ],
-        skills: [Skills.GameDev, Skills.SmartContractDev, Skills.Blockchain, Skills.GraphicDesign, Skills.UIUX, Skills.dAppDev],
-        languages: [Languages.Move, Languages.CSharp, Languages.TypeScript, Languages.SQL],
-        libraries: [Libraries.Unity, Libraries.PhotonFusion, Libraries.PhotonPun2, Libraries.AptosMove, Libraries.WebGL, Libraries.VercelPostgreSQL, Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
-        startDate: 'Mar 2023',
-        endDate: 'Present'
+        skills: [Skills.GameDev, Skills.SmartContractDev, Skills.Blockchain, Skills.dAppDev, Skills.FinancialEngineering],
+        languages: [Languages.Move, Languages.TypeScript],
+        libraries: [Libraries.AptosMove, Libraries.React, Libraries.NextJS, Libraries.ChakraUI],
+        startDate: 'Feb 2024',
+        endDate: 'Present',
     },
     {
         name: 'Satay Finance',
@@ -213,7 +257,7 @@ const projects: Project[] = [
         name: 'PikApp',
         description: 'Map-based app for finding and coordinating pickup sporting events',
         showcase: [Skills.MobileDev, Skills.GoogleCloud],
-        image: 'https://media.licdn.com/dms/image/C4E0BAQG4SYS8gVthhA/company-logo_100_100/0/1630623221285?e=1711584000&v=beta&t=Xcc3Ox-CChPTEh1Nsudd5Q0_nXQQA593wcPIS4RKaV4',
+        image: '/logos/pikapp.png',
         extendedDescription: 'PikApp is a map-based app for finding and coordinating pickup sporting events. It utilizes Google Places for suggesting locations and geohashing for distance calculations and intelligent event suggestions.',
         githubUrl: '',
         demoUrl: 'https://apps.apple.com/us/app/pikapp-mobile/id1475855291',
@@ -256,21 +300,21 @@ const projects: Project[] = [
         startDate: 'Apr 2021',
         endDate: 'Oct 2021'
     },
-    {
-        name: 'Aptostream',
-        description: 'Programmable continuous and event-based payment protocol on Aptos',
-        showcase: [Skills.FinancialEngineering, Skills.dAppDev],
-        image: '/logos/aptostream.png',
-        extendedDescription: 'Aptostream is a programmable continuous and event-based payment protocol on Aptos. It allows users to pay salary by the second, trigger payments based on events, and create custom payment schedules.',
-        githubUrl: '',
-        demoUrl: '',
-        images: [],
-        skills: [Skills.FinancialEngineering, Skills.dAppDev, Skills.SmartContractDev, Skills.Blockchain, Skills.FullStackWebDev],
-        languages: [Languages.Move, Languages.TypeScript],
-        libraries: [Libraries.AptosMove, Libraries.React, Libraries.NextJS, Libraries.ChakraUI],
-        startDate: 'Apr 2023',
-        endDate: 'May 2023'
-    },
+    // {
+    //     name: 'Aptostream',
+    //     description: 'Programmable continuous and event-based payment protocol on Aptos',
+    //     showcase: [Skills.FinancialEngineering, Skills.dAppDev],
+    //     image: '/logos/aptostream.png',
+    //     extendedDescription: 'Aptostream is a programmable continuous and event-based payment protocol on Aptos. It allows users to pay salary by the second, trigger payments based on events, and create custom payment schedules.',
+    //     githubUrl: '',
+    //     demoUrl: '',
+    //     images: [],
+    //     skills: [Skills.FinancialEngineering, Skills.dAppDev, Skills.SmartContractDev, Skills.Blockchain, Skills.FullStackWebDev],
+    //     languages: [Languages.Move, Languages.TypeScript],
+    //     libraries: [Libraries.AptosMove, Libraries.React, Libraries.NextJS, Libraries.ChakraUI],
+    //     startDate: 'Apr 2023',
+    //     endDate: 'May 2023'
+    // },
 ]
 
 export default projects;
