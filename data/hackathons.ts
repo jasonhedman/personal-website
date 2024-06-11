@@ -2,12 +2,30 @@ import {Hackathon} from "@/types/Hackathon";
 
 const hackathons: Hackathon[] = [
     {
+        title: "Microsoft Generative AI Hackathon",
+        description: "A global Microsoft hackathon focused on using Azure AI to create revolutionary multimodal experiences.",
+        whatIBuilt: "An AI copilot for students that learns and works with them, not for them. The copilot processes language, video, image, PDF, and text input to create a knowledge graph and guide students through their learning objectives.",
+        date: "May 2024",
+        location: "Global",
+        project: "ChatEDU",
+        award: "1st Place"
+    },
+    {
         title: "Microsoft AI Classroom Hackathon",
         description: "A Microsoft challenge for students to reimagine the future of education using Azure AI and Azure Databases.",
         whatIBuilt: "A multi-agent AI education framework that optimizes learning pathways for students and synthesizes classroom insights for teachers. Employed 4 Azure AI Services and 2 Azure Databases.",
         date: "January 2024",
         location: "Global",
         project: "ChatEDU",
+        award: "1st Place"
+    },
+    {
+        title: "Coinbase x Polygon x Thirdweb Hack House",
+        description: "30-day web3 gaming residence and hackathon in New York City sponsored by Coinbase, Polygon, and Thirdweb.",
+        whatIBuilt: "A zero-collateral NFT rental protocol using ERC-4907 that unlocks liquidity and lowers barriers to entry for gaming NFTs. Deployed the protocol to Polygon and and demoed a rental of a Decentraland parcel.",
+        date: "July 2022",
+        location: "New York, New York",
+        project: "Decentralease",
         award: "1st Place"
     },
     {
@@ -20,15 +38,6 @@ const hackathons: Hackathon[] = [
         award: "1st Place in Gaming, NFTs, and Social"
     },
     {
-        title: "Coinbase x Polygon x Thirdweb Hack House",
-        description: "30-day web3 gaming residence and hackathon in New York City sponsored by Coinbase, Polygon, and Thirdweb.",
-        whatIBuilt: "A zero-collateral NFT rental protocol using ERC-4907 that unlocks liquidity and lowers barriers to entry for gaming NFTs. Deployed the protocol to Polygon and and demoed a rental of a Decentraland parcel.",
-        date: "July 2022",
-        location: "New York, New York",
-        project: "Decentralease",
-        award: "1st Place"
-    },
-    {
         title: "VandyHacks X",
         description: "Vanderbilt's annual hackathon where students compete for 36 hours to build the most innovative software applications.",
         whatIBuilt: "A web-based AI edtech application that allows students to create personalized study guides and practice tests using their own notes and course materials. Partnered with Vanderbilt's Peabody School of Education for further development.",
@@ -36,6 +45,15 @@ const hackathons: Hackathon[] = [
         location: "Nashville, Tennessee",
         project: "ChatEDU",
         award: "1st Place"
+    },
+    {
+        title: "Vanderbilt Generative AI Showcase",
+        description: "Vanderbilt's annual AI showcase where students present their AI projects to industry professionals and faculty.",
+        whatIBuilt: "A generative learning search engine that allows lifelong learners to explore a particular topic breadth- or depth-first.",
+        date: "April 2024",
+        location: "Nashville, Tennessee",
+        project: "ChatEDU",
+        award: "2nd Place"
     },
     {
         title: "Tron Grand Hackathon",
