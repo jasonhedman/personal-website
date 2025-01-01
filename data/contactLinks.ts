@@ -10,10 +10,6 @@ const contactLinks: ContactLink[] = [
         href: 'mailto:jason@hedmans.org'
     },
     {
-        icon: FaPhone,
-        href: 'tel:617-930-1114'
-    },
-    {
         icon: FaGithub,
         href: 'https://github.com/jasonhedman'
     },
