@@ -2,6 +2,15 @@ import {Hackathon} from "@/types/Hackathon";
 
 const hackathons: Hackathon[] = [
     {
+        title: "Solana AI Hackathon",
+        description: "A global Solana hackathon focused on AI products for the Solana ecosystem.",
+        whatIBuilt: "An AI-enhanced token research and analysis platform on Solana.",
+        date: "January 2025",
+        location: "Global",
+        project: "The Hive",
+        award: "1st Place"
+    },
+    {
         title: "Microsoft Generative AI Hackathon",
         description: "A global Microsoft hackathon focused on using Azure AI to create revolutionary multimodal experiences.",
         whatIBuilt: "An AI copilot for students that learns and works with them, not for them. The copilot processes language, video, image, PDF, and text input to create a knowledge graph and guide students through their learning objectives.",
@@ -29,6 +38,15 @@ const hackathons: Hackathon[] = [
         award: "1st Place"
     },
     {
+        title: "Aptos Code Collision",
+        description: "2-month virtual hackathon for building dApps on the Aptos blockchain.",
+        whatIBuilt: "An mechanism to reward users of ChatEDU for their contributions to the ecosystem.",
+        date: "October 2024",
+        location: "Virtual",
+        project: "ChatEDU",
+        award: "1st Place"
+    },
+    {
         title: "Aptos Hack Holland",
         description: "Aptos-specific hackathon focused on building innovative applications using Move, a novel smart contract programming language.",
         whatIBuilt: "A Move-based dynamic on-chain game asset model that enables the creation of higher-order NFTs by combining equippable NFTs. Demoed the model using BRAWL3R, where users can enhance their 'player' NFTs with 'sword' and 'gun' assets.",
@@ -45,6 +63,33 @@ const hackathons: Hackathon[] = [
         location: "Nashville, Tennessee",
         project: "ChatEDU",
         award: "1st Place"
+    },
+    {
+        title: "TastyHacks",
+        description: "A 24-hour hackathon challenging participants to build software that has ~taste~",
+        whatIBuilt: "A web-based AI edtech application that teaches students math based on their interests.",
+        date: "November 2024",
+        location: "San Francisco, California",
+        project: "LearnWhy",
+        award: "1st Place"
+    },
+    {
+        title: "Coinbase AI Hackathon",
+        description: "A 24-hour challenge to push the boundaries of Coinbase AgentKit.",
+        whatIBuilt: "An open-source chatbot template that facilitates the creation of web-based agents that use Coinbase AgentKit.",
+        date: "February 2025",
+        location: "San Francisco, California",
+        project: "AgentKit Template",
+        award: "1st Place"
+    },
+    {
+        title: "Aptos Random Hackathon",
+        description: "A 2-week hackathon focused on using Aptos the on-chain randomness module",
+        whatIBuilt: "A fully on-chain, decentralized casino",
+        date: "February 2024",
+        location: "Virtual",
+        project: "Lucky Leopards Club",
+        award: "3rd Place"
     },
     {
         title: "Vanderbilt Generative AI Showcase",

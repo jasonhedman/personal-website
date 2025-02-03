@@ -8,6 +8,8 @@ import Hackathon from "@/components/Home/Hackathons/Hackathon";
 
 import hackathons from "@/data/hackathons";
 
+const NUM_HACKATHONS_TO_SHOW = 4;
+
 const Hackathons = () => {
 
     const [showAll, setShowAll] = useState<boolean>(false);
@@ -24,7 +26,7 @@ const Hackathons = () => {
                 }}
             >
                 {
-                    hackathons.slice(0, showAll ? hackathons.length : 3).map((hackathon, index) => (
+                    hackathons.slice(0, showAll ? hackathons.length : NUM_HACKATHONS_TO_SHOW).map((hackathon, index) => (
                         <Hackathon
                             key={index}
                             hackathon={hackathon}
@@ -36,7 +38,7 @@ const Hackathons = () => {
                         <Button
                             onClick={() => setShowAll(true)}
                         >
-                            Show {hackathons.length - 3} More
+                            Show {hackathons.length - NUM_HACKATHONS_TO_SHOW} More
                         </Button>
                     )
                 }

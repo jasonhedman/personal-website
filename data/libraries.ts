@@ -30,7 +30,10 @@ export enum Libraries {
     Polygon = "Polygon",
     Ethereum = "Ethereum",
     GoogleMapsAPI = "Google Maps API",
-    GooglePlacesAPI = "Google Places API"
+    GooglePlacesAPI = "Google Places API",
+    ShadcnUi = "Shadcn UI",
+    TailwindCSS = "Tailwind CSS",
+    Solana = "Solana",
 }
 
 export const rankedLibraries = (): TagProjects[] => Object.entries(projects

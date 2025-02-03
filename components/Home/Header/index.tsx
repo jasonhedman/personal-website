@@ -44,9 +44,6 @@ const Header = () => {
                     <Text>
                         {profileHeader.subtitle}
                     </Text>
-                    <Location
-                        location={profileHeader.location}
-                    />
                     <HStack>
                         {
                             contactLinks.map((contactLink, index) => (

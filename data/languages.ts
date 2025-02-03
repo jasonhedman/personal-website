@@ -10,6 +10,7 @@ export enum Languages {
     SQL = "SQL",
     CSharp = "C#",
     Python = "Python",
+    Rust = "Rust",
 }
 
 export const rankedLanguages = (): TagProjects[] => Object.entries(projects

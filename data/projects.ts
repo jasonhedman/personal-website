@@ -6,36 +6,41 @@ import {Libraries} from "@/data/libraries";
 
 const projects: Project[] = [
     {
-        name: 'BRAWL3R',
-        description: 'Online multiplayer 2D platform fighter game with composable, interoperable in-game NFTs',
-        showcase: [Skills.GameDev, Skills.SmartContractDev],
-        image: '/logos/brawl3r.png',
-        extendedDescription: 'BRAWL3R is an online multiplayer fighter game with interoperable in-game NFTs. Players can battle each other in real-time and earn NFTs that can be used in other games. BRAWL3R is built with Unity, C#, Photon, and Move.',
-        githubUrl: 'https://github.com/aptos-arcade',
-        demoUrl: 'https://www.brawl3r.com/',
+        name: 'The Hive',
+        description: 'AI-enhanced token research and analysis platform on Solana',
+        showcase: [Skills.SmartContractDev, Skills.dAppDev],
+        image: '/logos/hive.png',
+        extendedDescription: 'An interactive platform that analyzing tokens, liquidity pools, notable addresses, and trading activity on Solana.',
+        githubUrl: 'https://github.com/jasonhedman/the-hive',
+        demoUrl: 'https://www.askthehive.ai',
         images: [
             {
-                src: '/projects/brawl3r/cover.png',
-                caption: 'Cover'
+                src: '/projects/hive/home.png',
+                caption: 'Home'
             },
             {
-                src: '/projects/brawl3r/gameplay.png',
-                caption: 'Gameplay'
+                src: '/projects/hive/token-page.png',
+                caption: 'Token Page'
             },
             {
-                src: '/projects/brawl3r/brawler.png',
-                caption: 'Brawler Creation'
+                src: '/projects/hive/swap.png',
+                caption: 'Swap'
             },
             {
-                src: '/projects/brawl3r/leaderboard.png',
-                caption: 'Leaderboard'
-            }
+                src: '/projects/hive/liquidity.png',
+                caption: 'Liquidity'
+            },
+            {
+                src: '/projects/hive/trending.png',
+                caption: 'Trending'
+            },
+            
         ],
-        skills: [Skills.GameDev, Skills.SmartContractDev, Skills.Blockchain, Skills.GraphicDesign, Skills.UIUX, Skills.dAppDev],
-        languages: [Languages.Move, Languages.CSharp, Languages.TypeScript, Languages.SQL],
-        libraries: [Libraries.Unity, Libraries.PhotonFusion, Libraries.PhotonPun2, Libraries.AptosMove, Libraries.WebGL, Libraries.VercelPostgreSQL, Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
-        startDate: 'Mar 2023',
-        endDate: 'Present'
+        skills: [Skills.SmartContractDev, Skills.dAppDev, Skills.Blockchain, Skills.ProductManagement, Skills.UIUX],
+        languages: [Languages.Rust, Languages.TypeScript],
+        libraries: [Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.Solana],
+        startDate: 'Dec 2024',
+        endDate: 'Present',
     },
     {
         name: 'ChatEDU',
@@ -43,8 +48,8 @@ const projects: Project[] = [
         showcase: [Skills.AppliedAI, Skills.FullStackWebDev],
         extendedDescription: 'ChatEDU is a dynamic virtual tutor that transforms traditional study materials into interactive learning sessions. Users can upload their notes, textbooks, and lecture slides and the platform automatically generates study guides, explanations, and practice exams (multiple choice, free response, and application questions).',
         image: '/logos/chatEdu.png',
-        githubUrl: 'https://github.com/chat-edu/chat-edu',
-        demoUrl: 'https://www.chatedu.tech/',
+        githubUrl: 'https://github.com/chat-edu',
+        demoUrl: 'https://www.chatedu.ui/',
         images: [
             {
                 src: '/projects/chatEdu/cover.png',
@@ -76,6 +81,38 @@ const projects: Project[] = [
         skills: [Skills.AppliedAI, Skills.Azure, Skills.FullStackWebDev, Skills.DatabaseManagement, Skills.UIUX, Skills.ProductManagement],
         startDate: 'Oct 2023',
         endDate: 'Present',
+    },
+    {
+        name: 'BRAWL3R',
+        description: 'Online multiplayer 2D platform fighter game with composable, interoperable in-game NFTs',
+        showcase: [Skills.GameDev, Skills.SmartContractDev],
+        image: '/logos/brawl3r.png',
+        extendedDescription: 'BRAWL3R is an online multiplayer fighter game with interoperable in-game NFTs. Players can battle each other in real-time and earn NFTs that can be used in other games. BRAWL3R is built with Unity, C#, Photon, and Move.',
+        githubUrl: 'https://github.com/aptos-arcade',
+        demoUrl: 'https://www.brawl3r.com/',
+        images: [
+            {
+                src: '/projects/brawl3r/cover.png',
+                caption: 'Cover'
+            },
+            {
+                src: '/projects/brawl3r/gameplay.png',
+                caption: 'Gameplay'
+            },
+            {
+                src: '/projects/brawl3r/brawler.png',
+                caption: 'Brawler Creation'
+            },
+            {
+                src: '/projects/brawl3r/leaderboard.png',
+                caption: 'Leaderboard'
+            }
+        ],
+        skills: [Skills.GameDev, Skills.SmartContractDev, Skills.Blockchain, Skills.GraphicDesign, Skills.UIUX, Skills.dAppDev],
+        languages: [Languages.Move, Languages.CSharp, Languages.TypeScript, Languages.SQL],
+        libraries: [Libraries.Unity, Libraries.PhotonFusion, Libraries.PhotonPun2, Libraries.AptosMove, Libraries.WebGL, Libraries.VercelPostgreSQL, Libraries.React, Libraries.NextJS, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
+        startDate: 'Mar 2023',
+        endDate: 'Nov 2024'
     },
     {
         name: 'Lucky Leopards Club',
@@ -119,7 +156,7 @@ const projects: Project[] = [
         languages: [Languages.Move, Languages.TypeScript],
         libraries: [Libraries.AptosMove, Libraries.React, Libraries.NextJS, Libraries.ChakraUI],
         startDate: 'Feb 2024',
-        endDate: 'Present',
+        endDate: 'May 2024',
     },
     {
         name: 'Satay Finance',
@@ -155,7 +192,7 @@ const projects: Project[] = [
         libraries: [Libraries.AptosMove, Libraries.NextJS, Libraries.React, Libraries.ChakraUI, Libraries.GoogleCloudFunctions],
         languages: [Languages.Move, Languages.TypeScript, Languages.Python],
         startDate: 'Aug 2022',
-        endDate: 'Present',
+        endDate: 'July 2024',
     },
     {
         name: 'Decentralese',
