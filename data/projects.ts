@@ -321,22 +321,7 @@ const projects: Project[] = [
         libraries: [Libraries.ReactNative, Libraries.Expo, Libraries.Firebase, Libraries.GoogleMapsAPI, Libraries.GooglePlacesAPI, Libraries.MaterialUI],
         startDate: 'Jun 2018',
         endDate: 'Mar 2020'
-    },
-    {
-        name: 'Real Vision Bot Portfolio',
-        description: 'Collective investment DAO for Real Vision Pro Crypto NFT holders.',
-        showcase: [Skills.FinancialEngineering, Skills.FullStackWebDev],
-        image: 'https://yt3.googleusercontent.com/riWTZgtzm4m3UOTG8MMnTal7i7EfV1rWEhzS5Y1m_3ineiBKylbhoYjAacT2ZWP7skSAqpmC=s900-c-k-c0x00ffffff-no-rj',
-        extendedDescription: 'Real Vision Bot Portfolio is a collective investment DAO for Real Vision Pro Crypto NFT holders. Each week, users vote on a new portfolio allocation and the smart contract automatically rebalances the portfolio.',
-        githubUrl: '',
-        demoUrl: '',
-        images: [],
-        skills: [Skills.FinancialEngineering, Skills.FullStackWebDev, Skills.dAppDev, Skills.DatabaseManagement, Skills.Blockchain, Skills.UIUX],
-        languages: [Languages.Solidity, Languages.TypeScript],
-        libraries: [Libraries.React, Libraries.Ethereum, Libraries.NextJS, Libraries.CoinbaseWallet, Libraries.ChakraUI],
-        startDate: 'Apr 2021',
-        endDate: 'Oct 2021'
-    },
+    }
     // {
     //     name: 'Aptostream',
     //     description: 'Programmable continuous and event-based payment protocol on Aptos',
